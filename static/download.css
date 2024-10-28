@@ -1,0 +1,48 @@
+/* Сброс стилей по умолчанию */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Основные стили для body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7; /* Светлый фон */
+    color: #333; /* Темный текст */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Центрирование по горизонтали */
+    justify-content: center; /* Центрирование по вертикали */
+    height: 100vh; /* Высота экрана */
+    text-align: center; /* Центрирование текста */
+}
+
+/* Стили для заголовков */
+h1 {
+    margin-bottom: 20px; /* Отступ снизу */
+    color: #4a4a4a; /* Цвет заголовка */
+}
+
+/* Стили для кнопки */
+button {
+    padding: 10px 20px; /* Отступы внутри кнопки */
+    background-color: #ffff00; /* Синий фон */
+    border: none; /* Без рамки */
+    color: #221000; /* Белый текст */
+    font-size: 16px; /* Размер шрифта */
+    border-radius: 4px; /* Скругление углов */
+    cursor: pointer; /* Указатель при наведении */
+    transition: background-color 0.3s; /* Плавный переход цвета */
+}
+
+button:hover {
+    background-color: #0056b3; /* Более темный синий при наведении */
+}
+
+/* Стили для аудиоплеера */
+audio {
+    margin-top: 20px; /* Отступ сверху */
+    width: 100%; /* Ширина аудиоплеера */
+    max-width: 400px; /* Максимальная ширина */
+}

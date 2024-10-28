@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>Скачать файл</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='download.css') }}">
+</head>
+<body>
+    <h1>Файл успешно загружен!</h1>
+    <a href="/download/{{ filename }}">
+        <button>Скачать файл</button>
+    </a>
+    <br>
+    <a href="/">Загрузить другой файл</a>
+
+    <h1>Загрузка аудио файла</h1>
+    <form action="/download_audio" method="get">
+        <button type="submit">Download .wav</button>
+    </form>
+    <audio controls>
+        <source src="{{ url_for('download_audio_file') }}" type="audio/wav">
+        Ваш браузер не поддерживает аудиоэлемент.
+    </audio>
+</body>
+</html>
+    

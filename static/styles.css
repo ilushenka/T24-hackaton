@@ -1,0 +1,108 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.chat-container {
+    width: 60%;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.input-area {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 24px;
+    color: #333;
+}
+
+p {
+    color: #666;
+}
+
+input[type="text"], input[type="file"] {
+    width: 80%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+button {
+    padding: 12px 20px;
+    background-color: #ffff00;
+    border: none;
+    color: 221000;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #7b9a92;
+}
+
+.chat-display {
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+    max-height: 400px;
+    overflow-y: auto;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.message {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    max-width: 80%;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.user-message {
+    background-color: #e0f7fa;
+    align-self: flex-end;
+}
+
+.bot-message {
+    background-color: #f0f0f0;
+    align-self: flex-start;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.or-text {
+    font-size: 16px;
+    margin: 10px 0;
+    color: #999;
+}
+
+
+.image-container {
+    display: flex; /* Используем Flexbox */
+    justify-content: center; /* Центрируем по горизонтали */
+    align-items: center; /* Центрируем по вертикали, если нужно */
+    height: 100vh; /* Высота контейнера (по желанию) */
+}
+
+.responsive-image {
+    max-width: 20px; /* Устанавливаем максимальную ширину изображения */
+    width: 50%; /* Ширина 100% от контейнера */
+    height: auto; /* Сохраняем пропорции изображения */
+}

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Диалоговый сервис</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <img src="{{ url_for('static', filename='images/tbank.png') }}" alt="Описание изображения"/>
+    <h2>Upload URL File</h2>
+    <form action="/upload_url_file" method="post" enctype="multipart/form-data">
+        <label for="url">Введите URL PDF файла:</label>
+        <input type="text" id="url" name="url" required>
+        <button type="submit">Конвертировать</button>
+    </form>
+
+    <h1>Загрузите файл</h1>
+    <form method="post" enctype="multipart/form-data" action="/upload_file">
+        <input type="file" name="file" required>
+        <button type="submit">Загрузить</button>
+    </form>
+</body>
+</html>
